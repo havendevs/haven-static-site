@@ -56,16 +56,16 @@ const getNavItems = (): JSX.Element => {
 
 export default function Nav() {
   const [hamburgerOpen, setHamburgerOpen] = React.useState(false);
-  const hamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300';
+  const hamburgerLine = 'h-1 w-6 my-1 rounded-full bg-gray-300 transition ease transform duration-300';
 
   return (
     <nav className="fixed flex flex-wrap items-center justify-between px-2 sm:px-4 py-2.5 bg-slate-500 mb-3 w-full shadow-lg">
       <div className="container flex flex-wrap items-center md:justify-between mx-auto">
-        <button type="button" className="flex flex-col h-12 w-12 border-2 border-black rounded justify-center items-center group md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" onClick={() => setHamburgerOpen(!hamburgerOpen)}>
+        <button type="button" className="flex flex-col h-12 w-12 rounded justify-center items-center group md:hidden" onClick={() => setHamburgerOpen(!hamburgerOpen)}>
           <span className="sr-only">Toggle nav menu</span>
-          <div className={`${hamburgerLine} ${hamburgerOpen ? 'rotate-45 translate-y-3 opacity-50 group-hover:opacity-100' : 'opacity-50 group-hover:opacity-100'}`} />
-          <div className={`${hamburgerLine} ${hamburgerOpen ? 'opacity-0' : 'opacity-50 group-hover:opacity-100'}`} />
-          <div className={`${hamburgerLine} ${hamburgerOpen ? '-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100' : 'opacity-50 group-hover:opacity-100'}`} />
+          <div className={`${hamburgerLine} ${hamburgerOpen ? 'rotate-45 translate-y-3' : ''}`} />
+          <div className={`${hamburgerLine} ${hamburgerOpen ? 'opacity-0' : ''}`} />
+          <div className={`${hamburgerLine} ${hamburgerOpen ? '-rotate-45 -translate-y-3' : ''}`} />
         </button>
         <Link to="/" className="flex justify-start md:w-auto md:static md:block md:justify-start">
           <img src={HavenLogoWhite} alt="Haven" className="h-9 ml-2 mr-3 md:h-9" />
