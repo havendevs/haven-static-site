@@ -10,7 +10,7 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <div>
+    <div className="bg-red-400">
       <Nav />
       <Routes>
         <Route path="/about" element={<About />} />
@@ -19,7 +19,6 @@ function App() {
         <Route path="/" element={<Home />} />
       </Routes>
     </div>
-
   );
 }
 export default App;
