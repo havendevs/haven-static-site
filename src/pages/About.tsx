@@ -1,11 +1,15 @@
 import React from 'react';
 
 export default function About() {
+  const h4Class = 'text-3xl font-bold text-center md:text-xl';
+  const pRoleClass = 'text-lg font-bold text-center my-1';
+  const pEducationClass = 'text-lg text-center my-1';
+  const cellDivClass = 'flex flex-col justify-center items-center my-5 py-5 mx-6 md:flex-row';
   return (
     <div className="pt-[7rem] h-full">
-      <div className="mx-5 md:ml-20 md:w-auto">
-        <h1>About Us</h1>
-        <h3 className="text-2xl ml-3 mt-4 text-center">
+      <div className="mx-5 md:ml-20 mb-16 md:w-auto">
+        <h1 className="text-4xl font-bold text-gray-50">About Us</h1>
+        <h3 className="text-xl mt-4 text-gray-50 leading-7 md:text-2xl md:leading-9">
           Founded in Bloomington, Indiana, Haven Transportation LLC aims to legitimize and innovate
           micromobility by providing municipalities with our proprietary software platform, ebikes,
           escooters, and docks -- Havens™ -- to improve the quality of and control over this
@@ -19,34 +23,40 @@ export default function About() {
       </div>
       <div className="bg-slate-800 text-gray-50">
         <div>
-          <h2>Our Team</h2>
-          <div>
-            <div>
-              <h4>Zade Dohan</h4>
-              <p>CEO and Founder</p>
-              <p>
+          <h2 className="text-3xl font-bold text-center text-gray-50">Our Team</h2>
+          <div className="mx-9">
+            <div className={cellDivClass}>
+              <h4 className={h4Class}>Zade Dohan</h4>
+              <p className={pRoleClass}>CEO and Founder</p>
+              <p className={pEducationClass}>
                 BS Computer Science, WGU --&gt;MBA Business Analytics, Kelley School of Business
               </p>
             </div>
             <div>
-              <h4>Corey Briscoe</h4>
-              <p>CTO and Founder</p>
-              <p>BS/MS Computer Science, Luddy School of Informatics, Computing, and Engineering</p>
+              <h4 className={h4Class}>Corey Briscoe</h4>
+              <p className={pRoleClass}>CTO and Founder</p>
+              <p className={pEducationClass}>
+                BS/MS Computer Science, Luddy School of Informatics, Computing, and Engineering
+              </p>
             </div>
             <div>
-              <h4>Lucas Kroll</h4>
-              <p>Marketing Advisor</p>
-              <p>BS Marketing, Kelley School of Business</p>
+              <h4 className={h4Class}>Lucas Kroll</h4>
+              <p className={pRoleClass}>Marketing Advisor</p>
+              <p className={pEducationClass}>BS Marketing, Kelley School of Business</p>
             </div>
             <div>
-              <h4>Will Pack</h4>
-              <p>Financial Strategy Advisor</p>
-              <p>BS Supply Chain Management, Kelley School of Business</p>
+              <h4 className={h4Class}>Will Pack</h4>
+              <p className={pRoleClass}>Financial Strategy Advisor</p>
+              <p className={pEducationClass}>
+                BS Supply Chain Management, Kelley School of Business
+              </p>
             </div>
             <div>
-              <h4>Samuel Estrada</h4>
-              <p>Software Development Advisor</p>
-              <p>BS/MS Computer Science, Luddy School of Informatics, Computing, and Engineering</p>
+              <h4 className={h4Class}>Samuel Estrada</h4>
+              <p className={pRoleClass}>Software Development Advisor</p>
+              <p className={pEducationClass}>
+                BS/MS Computer Science, Luddy School of Informatics, Computing, and Engineering
+              </p>
             </div>
           </div>
         </div>
