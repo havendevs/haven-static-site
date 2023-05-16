@@ -5,7 +5,8 @@ export default function About() {
   const h4Class = 'text-3xl font-bold text-center md:text-xl';
   const pRoleClass = 'text-lg font-bold text-center my-1';
   const pEducationClass = 'text-lg text-center my-1';
-  const cellDivClass = 'flex flex-col justify-center items-center my-5 py-5 mx-6 md:flex-row';
+  const rowDivClass = 'flex flex-col md:flex-row justify-center items-center my-3 py-3 mx-9 md:mx-3';
+  const cellDivClass = 'flex flex-col items-center my-5 py-0 md:mx-3 md:w-1/3 md:h-1/3 md:justify-start';
   return (
     <div className="pt-[7rem] h-full">
       <div className="mx-5 md:ml-20 mb-16 md:w-auto">
@@ -25,7 +26,7 @@ export default function About() {
       <div className="bg-slate-800 text-gray-50">
         <div>
           <h2 className="text-3xl font-bold text-center text-gray-50">Our Team</h2>
-          <div className="mx-9">
+          <div className={rowDivClass}>
             <div className={cellDivClass}>
               <img src={CoreyBriscoeHeadshot} alt="Zade Dohan" className="w-40 h-40 rounded-full" />
               <h4 className={h4Class}>Zade Dohan</h4>
@@ -48,6 +49,8 @@ export default function About() {
               <p className={pRoleClass}>Marketing Advisor</p>
               <p className={pEducationClass}>BS Marketing, Kelley School of Business</p>
             </div>
+          </div>
+          <div className={rowDivClass}>
             <div className={cellDivClass}>
               <img src={CoreyBriscoeHeadshot} alt="Will Pack" className="w-40 h-40 rounded-full" />
               <h4 className={h4Class}>Will Pack</h4>
