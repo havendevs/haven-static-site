@@ -1,4 +1,5 @@
 import React from 'react';
+import CoreyBriscoeHeadshot from '../assets/CoreyBriscoeHeadshot.jpeg';
 
 export default function About() {
   const h4Class = 'text-3xl font-bold text-center md:text-xl';
@@ -26,32 +27,37 @@ export default function About() {
           <h2 className="text-3xl font-bold text-center text-gray-50">Our Team</h2>
           <div className="mx-9">
             <div className={cellDivClass}>
+              <img src={CoreyBriscoeHeadshot} alt="Zade Dohan" className="w-40 h-40 rounded-full" />
               <h4 className={h4Class}>Zade Dohan</h4>
               <p className={pRoleClass}>CEO and Founder</p>
               <p className={pEducationClass}>
                 BS Computer Science, WGU --&gt;MBA Business Analytics, Kelley School of Business
               </p>
             </div>
-            <div>
+            <div className={cellDivClass}>
+              <img src={CoreyBriscoeHeadshot} alt="Corey Briscoe" className="w-40 h-40 rounded-full" />
               <h4 className={h4Class}>Corey Briscoe</h4>
               <p className={pRoleClass}>CTO and Founder</p>
               <p className={pEducationClass}>
                 BS/MS Computer Science, Luddy School of Informatics, Computing, and Engineering
               </p>
             </div>
-            <div>
+            <div className={cellDivClass}>
+              <img src={CoreyBriscoeHeadshot} alt="Lucas Kroll" className="w-40 h-40 rounded-full" />
               <h4 className={h4Class}>Lucas Kroll</h4>
               <p className={pRoleClass}>Marketing Advisor</p>
               <p className={pEducationClass}>BS Marketing, Kelley School of Business</p>
             </div>
-            <div>
+            <div className={cellDivClass}>
+              <img src={CoreyBriscoeHeadshot} alt="Will Pack" className="w-40 h-40 rounded-full" />
               <h4 className={h4Class}>Will Pack</h4>
               <p className={pRoleClass}>Financial Strategy Advisor</p>
               <p className={pEducationClass}>
                 BS Supply Chain Management, Kelley School of Business
               </p>
             </div>
-            <div>
+            <div className={cellDivClass}>
+              <img src={CoreyBriscoeHeadshot} alt="Samuel Estrada" className="w-40 h-40 rounded-full" />
               <h4 className={h4Class}>Samuel Estrada</h4>
               <p className={pRoleClass}>Software Development Advisor</p>
               <p className={pEducationClass}>
@@ -66,7 +72,7 @@ export default function About() {
         </div>
         <div>
           <p>
-            As students at Indiana University, we&aposve see the impact of micromobility on
+            As students at Indiana University, we&apos;ve seen the impact of micromobility on
             communities first-hand and decided to found Haven to help improve public transportation
             by promoting sustainability, safety, and reliability in ways that the current market
             cannot.
