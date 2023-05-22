@@ -5,17 +5,17 @@ export default function About() {
   const h4Class = 'text-3xl font-bold text-center mt-2 md:text-xl';
   const pRoleClass = 'text-lg font-bold text-center my-1';
   const pEducationClass = 'text-lg text-center my-1';
-  const rowDivClass = 'flex flex-col md:flex-row justify-center items-start my-3 py-3 mx-9 md:mx-3';
+  const rowDivClass = 'flex flex-col md:flex-row justify-center items-start my-0 py-0 mx-9 md:mx-3 md:my-3 md:py-3';
   const cellDivClass = 'flex flex-col items-center my-5 py-0 md:mx-3 md:w-1/3 md:h-1/3 md:justify-start';
-  const originStoryClass = 'text-lg text-center text-gray-50 mx-3 mb-10 md:text-2xl md:mx-6 md:mb-7';
+  const originStoryClass = 'text-lg text-center text-gray-50 mx-3 mb-8 md:text-2xl md:mx-6 md:mb-7';
   return (
     <div className="pt-[7rem] h-full">
       <div className="mx-5 md:ml-20 mb-16 md:w-auto">
         <h1 className="text-4xl font-bold text-gray-50">About Us</h1>
         <h3 className="text-xl mt-4 text-gray-50 leading-7 md:text-2xl md:leading-9">
           Founded in Bloomington, Indiana, Haven Transportation LLC aims to legitimize and innovate
-          micromobility by providing municipalities with our proprietary software platform, ebikes,
-          escooters, and docks -- Havens™ -- to improve the quality of and control over this
+          micromobility by providing municipalities with our proprietary software platform, e-bikes,
+          e-scooters, and docks -- Havens™ -- to improve the quality of and control over this
           quickly growing form of transportation. Our
           products and platform address an unmet need in the American market for a flexible and
           modular docked-based micromobility vendor that municipalities can use to improve safety,
@@ -69,10 +69,6 @@ export default function About() {
               </p>
             </div>
           </div>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
         </div>
         <div>
           <p className={originStoryClass}>
