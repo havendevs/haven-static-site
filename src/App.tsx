@@ -10,7 +10,7 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="bg-red-400">
+    <div className="bg-slate-800">
       <Nav />
       <Routes>
         <Route path="/about" element={<About />} />
