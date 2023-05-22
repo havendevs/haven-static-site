@@ -2,10 +2,10 @@ import React from 'react';
 import CoreyBriscoeHeadshot from '../assets/CoreyBriscoeHeadshot.jpeg';
 
 export default function About() {
-  const h4Class = 'text-3xl font-bold text-center md:text-xl';
+  const h4Class = 'text-3xl font-bold text-center mt-2 md:text-xl';
   const pRoleClass = 'text-lg font-bold text-center my-1';
   const pEducationClass = 'text-lg text-center my-1';
-  const rowDivClass = 'flex flex-col md:flex-row justify-center items-center my-3 py-3 mx-9 md:mx-3';
+  const rowDivClass = 'flex flex-col md:flex-row justify-center items-start my-3 py-3 mx-9 md:mx-3';
   const cellDivClass = 'flex flex-col items-center my-5 py-0 md:mx-3 md:w-1/3 md:h-1/3 md:justify-start';
   return (
     <div className="pt-[7rem] h-full">
