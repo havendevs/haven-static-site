@@ -7,6 +7,7 @@ export default function About() {
   const pEducationClass = 'text-lg text-center my-1';
   const rowDivClass = 'flex flex-col md:flex-row justify-center items-start my-3 py-3 mx-9 md:mx-3';
   const cellDivClass = 'flex flex-col items-center my-5 py-0 md:mx-3 md:w-1/3 md:h-1/3 md:justify-start';
+  const originStoryClass = 'text-lg text-center text-gray-50 mx-3 mb-10 md:text-2xl md:mx-6 md:mb-7';
   return (
     <div className="pt-[7rem] h-full">
       <div className="mx-5 md:ml-20 mb-16 md:w-auto">
@@ -74,13 +75,13 @@ export default function About() {
           <img src="" alt="" />
         </div>
         <div>
-          <p>
+          <p className={originStoryClass}>
             As students at Indiana University, we&apos;ve seen the impact of micromobility on
             communities first-hand and decided to found Haven to help improve public transportation
             by promoting sustainability, safety, and reliability in ways that the current market
-            cannot.
+            offerings cannot.
           </p>
-          <p>
+          <p className={originStoryClass}>
             Our team&apos;s early steps in the commuter transportation industry began in July 2021,
             when we conducted market research, consulted iteratively with institutions like IU
             Parking Operations, and developed IP to modernize parking infrastructure. What would go
